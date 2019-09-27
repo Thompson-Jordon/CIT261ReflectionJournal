@@ -15,43 +15,47 @@
       <h2>Loops</h2>
       <p>Loops are used to repeat a piece of code until certain conditions are met.</p>
       <h3>while</h3>
-      <p>A while loop will check the condition, and if the condition is not met it will continue to run the code inside the loop.</p>
+      <p>A while loop will check the condition, and if the condition is not met it will continue to run the code inside
+         the loop.</p>
       <p class="code_snippet">while(condition) {<br>//do something<br>}</p>
       <h3>Infinite Loop</h3>
-      <p>An Infinite Loop is a loop that will continue to loop forever due to the fact that the loop will never meet the conditions of the loop.</p>
+      <p>An Infinite Loop is a loop that will continue to loop forever due to the fact that the loop will never meet the
+         conditions of the loop.</p>
       <p class="code_snippet">let n = 1;<br>while (n > 0) {<br>console.log('Please Stop!');<br>n++;<br>}</p>
       <h3>do while</h3>
-      <p>The do while will run the loop once before it checks the condition. If the condition is not met it will continue to loop.</p>
+      <p>The do while will run the loop once before it checks the condition. If the condition is not met it will
+         continue to loop.</p>
       <p class="code_snippet">do {<br>//do something<br>} while (condition)</p>
       <h3>for</h3>
-      <p>A for loop allows the user to set an initialized value, a condition to be met, and what to do after if the condition is not met.</p>
+      <p>A for loop allows the user to set an initialized value, a condition to be met, and what to do after if the
+         condition is not met.</p>
       <p class="code_snippet">for (let i = 0; i &lt; 10; i++) {<br>//do something<br>}</p>
    </div>
    <div>
       <h2>Conditional Statements</h2>
       <p></p>
       <h3>if</h3>
-      <p>The if statement allows the code to check a single condition. If the 
+      <p>The if statement allows the code to check a single condition. If the
          condition is true it will execute the code in the if statement, otherwise it does nothing.</p>
       <p class="code_snippet">if (a > b) {<br>//do something<br>}</p>
       <h3>if...else</h3>
-      <p>The if else block allows you to check if the code meets the if 
-         condition. If it does it will execute the code if block. If it 
+      <p>The if else block allows you to check if the code meets the if
+         condition. If it does it will execute the code if block. If it
          is false it will execute the else block.</p>
-      <p class="code_snippet">if (a == 1) {<br>//do something<br>} else 
+      <p class="code_snippet">if (a == 1) {<br>//do something<br>} else
          {<br>//do something else<br>}</p>
       <h3>if...else if...else</h3>
-      <p>You can also have many "else if" statements. This allows you to 
+      <p>You can also have many "else if" statements. This allows you to
          check many different possibilities. User must end with an else statement</p>
       <p class="code_snippet">if (name == 'Fred') {<br>console.log('Hi Fred!');
          <br>} else if (name == 'Jon') {<br>console.log('Hi Jon');<br>} else {
          <br>console.log('Who are you?');<br>}</p>
-         <h3>switch</h3>
-         <p>The switch statement allows you to check value agains several cases.
-            If your value doesn't match any of the cases it will use the default case.
-            You need to use "break;" on each of your cases or else the code will keep
-            executing the next case.</p>
-         <p class="code_snippet">case (color) {<br>case "blue":<br>console.log
+      <h3>switch</h3>
+      <p>The switch statement allows you to check value agains several cases.
+         If your value doesn't match any of the cases it will use the default case.
+         You need to use "break;" on each of your cases or else the code will keep
+         executing the next case.</p>
+      <p class="code_snippet">case (color) {<br>case "blue":<br>console.log
          ("Your color is blue");<br>break;<br>case "red":<br>console.log
          ("Your color is red");<br>break;<br>default:<br>console.log("Your color
          is not red or blue");<br>}</p>
@@ -59,8 +63,22 @@
    <div>
       <h2>Functions</h2>
       <p>A function is a self contained piece of code that you can reference by
-         name. They are useful for reducing redundant code.
-      </p>
+         name. They are useful for reducing redundant code.</p>
+      <h3>Declaring a Function</h3>
+      <p>To declare a function you use the word "function" then give it a name. In this
+         case the name is "greeting". You follow the name with "()" which are used for
+         function arguments.</p>
+      <p class="code_snippet">function greeting(){<br>console.log("Welcome");<br>}</p>
+      <h3>Calling a Function</h3>
+      <p>To call a function you simply enter its name as you can see in the following
+         code snippet.</p>
+      <p class="code_snippet">//Calling a function<br>greeting();<br>&lt&lt 'Welcome'</p>
+      <h3>Inputs and Outputs</h3>
+      <p>You can input values through a functions arguments. You can also recieve values
+         from a function by using "return" in the function.</p>
+      <p class="code_snippet">//A function to add 2 values<br>function sum(x, y){<br>return
+          x + y;<br>}<br><br>/*When calling this function you must pass in arguments*/<br>
+         sum(1, 2);<br>&lt&lt 3</p>
    </div>
    <div>
       <h2>Variables</h2>
