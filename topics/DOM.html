@@ -12,24 +12,69 @@
 <body>
    <h1>DOM Document Object Model</h1>
    <div>
-      <h2>DOM Manipulation Using createElement</h2>
-      <p></p>
+      <h2>Introduction</h2>
+      <p>The "DOM" was developed to make interacting between HTML and your
+         programming language easier. In our case that is JavaScript but DOM
+         works with other languages as well. DOM allows you to change, add,
+         remove all of the HTML elements. It also allows you to change all of
+         the CSS styles.</p>
+      <h3>Some Common Functions</h3>
+      <p>I wanted to put a few common DOM functions here. I will go over some of
+         them below.</p>
+      <ul class="code_snippet">
+         <li>document.getElementById(id)</li>
+         <li>document.getElementsByTagName()</li>
+         <li>document.createElement(name)</li>
+         <li>parentNode.appendChild(name)</li>
+         <li>element.innerHTML</li>
+         <li>element.style.left</li>
+         <li>element.setAttribute()</li>
+         <li>element.getAttribute()</li>
+         <li>element.addEventListener()</li>
+         <li>window.content</li>
+         <li>window.onload</li>
+         <li>colnsole.log()</li>
+         <li>window.scrollTo()</li>
+      </ul>
+      <h3>Useful Resources</h3>
+      <a href="https://www.w3schools.com/js/js_htmldom.asp">w3schools</a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">Mozilla Inro to
+         DOM</a>
+      <a href="https://www.w3.org/TR/WD-DOM/introduction.html">w3.org</a>
    </div>
    <div>
-      <h2>appendChild</h2>
-      <p></p>
+      <h2>createElement and appendChild</h2>
+      <p>"createElement" adds a new element to the page. "appendChild" attaches
+         an element under the specified element as a child.<br><br>Here we have
+         a button that when pressed creates a new blockquote element. I then add
+         text to the blockquote with .innerHTML, and then append it to the
+         parent of the button.</p>
+      <button id="btn1" onclick="makeElement()">Create an Element</button>
    </div>
-   <div>
+   <div id="myDiv">
       <h2>insertBefore</h2>
-      <p></p>
+      <p>This Button does the same as the last one. The big difference is that
+         the elements are "inserted" before the button.
+      </p>
+      <button id="btn2" onclick="putBefore()">Create an Element</button>
    </div>
    <div>
       <h2>removeChild</h2>
-      <p></p>
+      <p>"removeChild" will remove a specified element. In this case it will
+         remove an item from an order list.</p>
+      <ul id="myList">
+         <li>milk</li>
+         <li>eggs</li>
+         <li>flour</li>
+         <li>sugar</li>
+         <li>butter</li>
+         <li>enjoy!</li>
+      </ul>
+      <button onclick="takeAway()">Remove Items</button>
    </div>
    <div>
       <h2>etc.</h2>
-      <p></p>
+      <p>More to come...</p>
    </div>
    <script src="/cit261/scripts/app.js"></script>
 </body>

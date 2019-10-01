@@ -26,6 +26,7 @@ div {
 
 p {
    margin: 10px;
+   text-align: justify;
 }
 
 .code_snippet {
@@ -34,4 +35,18 @@ p {
    padding: 10px;
    margin: 10px;
    font-family: "Courier New", Courier, monospace;
+}
+
+button {
+   background: rgb(0, 91, 211);
+   border: none;
+   color: white;
+   border-radius: 5px;
+   display: block;
+   margin: auto;
+   padding: 10px;
+}
+
+blockquote {
+   text-align: center; 
 }
