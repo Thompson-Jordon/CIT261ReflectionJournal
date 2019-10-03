@@ -14,7 +14,7 @@ function putBefore() {
    before.insertBefore(btn, btn2);
 }
 
-function takeAway() {
+function remove() {
    var list = document.getElementById("myList");
    list.removeChild(list.childNodes[0]);
 }
