@@ -16,5 +16,5 @@ function putBefore() {
 
 function remove() {
    var list = document.getElementById("myList");
-   list.removeChild(list.childNodes[0]);
+   list.removeChild(list.children[0]);
 }
