@@ -1,136 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="/cit261/styles/style.css" />
+  </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>JavaScript</title>
-   <link rel="stylesheet" href="/cit261/styles/style.css">
-</head>
-
-<body>
-   <h1>JavaScript</h1>
-   <div>
+  <body>
+    <h1>JavaScript</h1>
+    <div>
       <h2>Loops</h2>
-      <p>Loops are used to repeat a piece of code until certain conditions are met.</p>
+      <p>
+        Loops are used to repeat a piece of code until certain conditions are
+        met.
+      </p>
       <h3>while</h3>
-      <p>A while loop will check the condition, and if the condition is not met it will continue to run the code inside
-         the loop.</p>
-      <p class="code_snippet">while(condition) {<br>//do something<br>}</p>
+      <p>
+        A while loop will check the condition, and if the condition is not met
+        it will continue to run the code inside the loop.
+      </p>
+      <p class="code_snippet">while(condition) {<br />//do something<br />}</p>
       <h3>Infinite Loop</h3>
-      <p>An Infinite Loop is a loop that will continue to loop forever due to the fact that the loop will never meet the
-         conditions of the loop.</p>
-      <p class="code_snippet">let n = 1;<br>while (n > 0) {<br>console.log('Please Stop!');<br>n++;<br>}</p>
+      <p>
+        An Infinite Loop is a loop that will continue to loop forever due to the
+        fact that the loop will never meet the conditions of the loop.
+      </p>
+      <p class="code_snippet">
+        let n = 1;<br />while (n > 0) {<br />console.log('Please Stop!');<br />n++;<br />}
+      </p>
       <h3>do while</h3>
-      <p>The do while will run the loop once before it checks the condition. If the condition is not met it will
-         continue to loop.</p>
-      <p class="code_snippet">do {<br>//do something<br>} while (condition)</p>
+      <p>
+        The do while will run the loop once before it checks the condition. If
+        the condition is not met it will continue to loop.
+      </p>
+      <p class="code_snippet">
+        do {<br />//do something<br />} while (condition)
+      </p>
       <h3>for</h3>
-      <p>A for loop allows the user to set an initialized value, a condition to be met, and what to do after if the
-         condition is not met.</p>
-      <p class="code_snippet">for (let i = 0; i &lt; 10; i++) {<br>//do something<br>}</p>
-   </div>
-   <div>
+      <p>
+        A for loop allows the user to set an initialized value, a condition to
+        be met, and what to do after if the condition is not met.
+      </p>
+      <p class="code_snippet">
+        for (let i = 0; i &lt; 10; i++) {<br />//do something<br />}
+      </p>
+    </div>
+    <div>
       <h2>Conditional Statements</h2>
       <p></p>
       <h3>if</h3>
-      <p>The if statement allows the code to check a single condition. If the
-         condition is true it will execute the code in the if statement, otherwise it does nothing.</p>
-      <p class="code_snippet">if (a > b) {<br>//do something<br>}</p>
+      <p>
+        The if statement allows the code to check a single condition. If the
+        condition is true it will execute the code in the if statement,
+        otherwise it does nothing.
+      </p>
+      <p class="code_snippet">if (a > b) {<br />//do something<br />}</p>
       <h3>if...else</h3>
-      <p>The if else block allows you to check if the code meets the if
-         condition. If it does it will execute the code if block. If it
-         is false it will execute the else block.</p>
-      <p class="code_snippet">if (a == 1) {<br>//do something<br>} else
-         {<br>//do something else<br>}</p>
+      <p>
+        The if else block allows you to check if the code meets the if
+        condition. If it does it will execute the code if block. If it is false
+        it will execute the else block.
+      </p>
+      <p class="code_snippet">
+        if (a == 1) {<br />//do something<br />} else {<br />//do something
+        else<br />}
+      </p>
       <h3>if...else if...else</h3>
-      <p>You can also have many "else if" statements. This allows you to
-         check many different possibilities. User must end with an else statement</p>
-      <p class="code_snippet">if (name == 'Fred') {<br>console.log('Hi Fred!');
-         <br>} else if (name == 'Jon') {<br>console.log('Hi Jon');<br>} else {
-         <br>console.log('Who are you?');<br>}</p>
+      <p>
+        You can also have many "else if" statements. This allows you to check
+        many different possibilities. User must end with an else statement
+      </p>
+      <p class="code_snippet">
+        if (name == 'Fred') {<br />console.log('Hi Fred!'); <br />} else if
+        (name == 'Jon') {<br />console.log('Hi Jon');<br />} else {
+        <br />console.log('Who are you?');<br />}
+      </p>
       <h3>switch</h3>
-      <p>The switch statement allows you to check value agains several cases.
-         If your value doesn't match any of the cases it will use the default case.
-         You need to use "break;" on each of your cases or else the code will keep
-         executing the next case.</p>
-      <p class="code_snippet">switch (color) {<br>case "blue":<br>console.log
-         ("Your color is blue");<br>break;<br>case "red":<br>console.log
-         ("Your color is red");<br>break;<br>default:<br>console.log("Your color
-         is not red or blue");<br>}</p>
-   </div>
-   <div>
+      <p>
+        The switch statement allows you to check value agains several cases. If
+        your value doesn't match any of the cases it will use the default case.
+        You need to use "break;" on each of your cases or else the code will
+        keep executing the next case.
+      </p>
+      <p class="code_snippet">
+        switch (color) {<br />case "blue":<br />console.log ("Your color is
+        blue");<br />break;<br />case "red":<br />console.log ("Your color is
+        red");<br />break;<br />default:<br />console.log("Your color is not red
+        or blue");<br />}
+      </p>
+    </div>
+    <div>
       <h2>Functions</h2>
-      <p>A function is a self contained piece of code that you can reference by
-         name. They are useful for reducing redundant code.</p>
+      <p>
+        A function is a self contained piece of code that you can reference by
+        name. They are useful for reducing redundant code.
+      </p>
       <h3>Declaring a Function</h3>
-      <p>To declare a function you use the word "function" then give it a name. 
-         In this case the name is "greeting". You follow the name with "()" 
-         which are used for function arguments.</p>
-      <p class="code_snippet">function greeting(){<br>console.log("Welcome");
-         <br>}</p>
+      <p>
+        To declare a function you use the word "function" then give it a name.
+        In this case the name is "greeting". You follow the name with "()" which
+        are used for function arguments.
+      </p>
+      <p class="code_snippet">
+        function greeting(){<br />console.log("Welcome"); <br />}
+      </p>
       <h3>Calling a Function</h3>
-      <p>To call a function you simply enter its name as you can see in the 
-         following code snippet.</p>
-      <p class="code_snippet">//Calling a function<br>greeting();<br>&laquo; 
-         'Welcome'</p>
+      <p>
+        To call a function you simply enter its name as you can see in the
+        following code snippet.
+      </p>
+      <p class="code_snippet">
+        //Calling a function<br />greeting();<br />&laquo; 'Welcome'
+      </p>
       <h3>Inputs and Outputs</h3>
-      <p>You can input values through a functions arguments. You can also 
-         recieve values from a function by using "return" in the function.</p>
-      <p class="code_snippet">//A function to add 2 values<br>function sum(x, y){
-         <br>return x + y;<br>}<br><br>/*When calling this function you must 
-         pass in arguments*/<br>sum(1, 2);<br>&laquo; 3</p>
-   </div>
-   <div>
+      <p>
+        You can input values through a functions arguments. You can also recieve
+        values from a function by using "return" in the function.
+      </p>
+      <p class="code_snippet">
+        //A function to add 2 values<br />function sum(x, y){ <br />return x +
+        y;<br />}<br /><br />/*When calling this function you must pass in
+        arguments*/<br />sum(1, 2);<br />&laquo; 3
+      </p>
+    </div>
+    <div>
       <h2>Variables</h2>
       <h3>let</h3>
-      <p>In JavaScript instead of using "int" or "char" keywords, they use the
-         keywords "let" to declare every type of variable.</p>
+      <p>
+        In JavaScript instead of using "int" or "char" keywords, they use the
+        keywords "let" to declare every type of variable.
+      </p>
       <p class="code_snippet">let x = 3, name = 'Jane';</p>
       <h3>const</h3>
-      <p>const is used to declare a constant variable. Once assigned you cannot
-         change the value of the variable.</p>
+      <p>
+        const is used to declare a constant variable. Once assigned you cannot
+        change the value of the variable.
+      </p>
       <p class="code_snippet">const PI = 3.14;</p>
-   </div>
-   <div>
+    </div>
+    <div>
       <h2>Parameters</h2>
-      <p>Parameter, or Function Parameters, are used to pass values into a 
-         function. In JavaScript you do not need to specify a data type. 
-         JavaScript does not do type checking, so if you want to make sure your 
-         variable is relevent you better check it.</p>
-      <p class="code_snippet">function larger(param1, param2){<br>&nbsp;&nbsp;if
-         (param1 > param2) {<br>&nbsp;&nbsp;&nbsp;&nbsp;return param1;<br>&nbsp;
-          } else {<br>&nbsp;&nbsp;&nbsp;&nbsp;return param2;<br>&nbsp; }<br>}</p>
-   </div>
-   <div>
+      <p>
+        Parameter, or Function Parameters, are used to pass values into a
+        function. In JavaScript you do not need to specify a data type.
+        JavaScript does not do type checking, so if you want to make sure your
+        variable is relevent you better check it.
+      </p>
+      <p class="code_snippet">
+        function larger(param1, param2){<br />&nbsp;&nbsp;if (param1 > param2)
+        {<br />&nbsp;&nbsp;&nbsp;&nbsp;return param1;<br />&nbsp; } else {<br />&nbsp;&nbsp;&nbsp;&nbsp;return
+        param2;<br />&nbsp; }<br />}
+      </p>
+    </div>
+    <div>
       <h2>Arrays</h2>
       <p>Arrays are very similar to ones used in c++</p>
       <h3>Initializing an Array</h3>
       <p>To initialize an array you use the square brackets []</p>
       <p class="code_snippet">const boxOfToys = [];</p>
-      <p>this initializes an empty array. If I want to add or change anything in the array, I would just 
-         use the index number of the location where I want to store the data.</p>
+      <p>
+        this initializes an empty array. If I want to add or change anything in
+        the array, I would just use the index number of the location where I
+        want to store the data.
+      </p>
       <p class="code_snippet">boxOfToys[0] = "car";</p>
       <h3>Built in functions</h3>
-      <p>Arrays have several built in functions that you can make use of. Including length(),
-         toString(), join() join is the same as to string except you can specify a seperator, 
-         pop() and push() which add and remove elements to the back of the array, you also have 
-         shift() and unshift() which add and remove from the front.
+      <p>
+        Arrays have several built in functions that you can make use of.
+        Including length(), toString(), join() join is the same as to string
+        except you can specify a seperator, pop() and push() which add and
+        remove elements to the back of the array, you also have shift() and
+        unshift() which add and remove from the front.
       </p>
-      <p class="code_snippet">boxOfToys.length;<br>&laquo; 1<br>boxOfToys.push("dinosaur");<br>
-         &laquo; 2 //tells you the new length<br></p>
-   </div>
-   <div>
+      <p class="code_snippet">
+        boxOfToys.length;<br />&laquo; 1<br />boxOfToys.push("dinosaur");<br />
+        &laquo; 2 //tells you the new length<br />
+      </p>
+    </div>
+    <div>
       <h2>Associative Arrays</h2>
-      <p>Associative arrays are much like normal arrays except instead of using indexes to 
-         store your values, you use names.
+      <p>
+        Associative arrays are much like normal arrays except instead of using
+        indexes to store your values, you use names.
       </p>
-      <p class="code_snippet">const favorite = [];<br>favorite["car"] = "Ferrari";<br>
-      favorite["color"] = "Blue";<br>favorite["day"] = "Friday";<br><br>//this is how you access it
-      favorite["car"];<br>&laquo; 'Blue'</p>
-   </div>
-   <script src="/cs216/scripts/app.js"></script>
-</body>
-
+      <p class="code_snippet">
+        const favorite = [];<br />favorite["car"] = "Ferrari";<br />
+        favorite["color"] = "Blue";<br />favorite["day"] = "Friday";<br /><br />//this
+        is how you access it favorite["car"];<br />&laquo; 'Blue'
+      </p>
+    </div>
+    <script src="/cs216/scripts/app.js"></script>
+  </body>
 </html>
