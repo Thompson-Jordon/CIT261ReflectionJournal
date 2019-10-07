@@ -1,37 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Objects</title>
+    <link rel="stylesheet" href="/cit261/styles/style.css" />
+  </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>JavaScript Objects</title>
-   <link rel="stylesheet" href="/styles/style.css">
-</head>
-
-<body>
-   <h2>JavaScript Objects</h2>
-   <div>
+  <body>
+    <h2>JavaScript Objects</h2>
+    <div>
       <h2>Object Creation Functions</h2>
-      <p></p>
-   </div>
-   <div>
+      <p>
+        To create an object in JavaScript you can either use curly braces or you
+        can make your variable equal to a "new Object()"
+      </p>
+      <p class="code_snippet">
+        //This uses curly braces<br />const rock = {}; <br /><br />//This uses
+        'new'<br />const bird = new Object();
+      </p>
+    </div>
+    <div>
       <h2>Inheritance</h2>
       <p></p>
-   </div>
-   <div>
+    </div>
+    <div>
       <h2>Properties</h2>
-      <p></p>
-   </div>
-   <div>
+      <p>You can access your object properties with dot notation</p>
+      <p class="code_snippet">
+        //you can do it like this <br />bird.color<br />&laquo; 'blue'<br />
+        <br />//or like this<br />bird["food"]<br />&laquo; 'worm'
+      </p>
+    </div>
+    <div>
       <h2>Methods</h2>
-      <p></p>
-   </div>
-   <div>
+      <p>
+        A method is a function that is tied to an object. When you put in your
+        names and press send it will call "person.setMessage()" then display
+        your results.
+      </p>
+      <label for="firstName">Whats your first name?</label>
+      <input id="firstName" type="text" />
+      <label for="lastName">Whats your last name?</label>
+      <input id="lastName" type="text" />
+      <button onclick="displayMessage()">send</button>
+      <p id="message" class="code_snippet"></p>
+    </div>
+    <div>
       <h2>Instantiations</h2>
       <p></p>
-   </div>
-   <script src="/scripts/app.js"></script>
-</body>
-
+    </div>
+    <script src="/cit261/scripts/objects.js"></script>
+  </body>
 </html>
