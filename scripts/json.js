@@ -1,18 +1,18 @@
-var obj;
+let obj;
 
 //Function to parse json
 function parseJSON() {
-  var text =
+  let text =
     '{"ball": {"color": "green", "size": "small", "typeOf": "soccer"}}';
   obj = JSON.parse(text);
-  var story = `Jimmy loves to play ${obj.ball.typeOf} with his ${obj.ball.size} ${obj.ball.color} ball.`;
+  let story = `Jimmy loves to play ${obj.ball.typeOf} with his ${obj.ball.size} ${obj.ball.color} ball.`;
 
   //place story in html
   document.getElementById("story").innerHTML = story;
 }
 
 function makeString() {
-   var text = JSON.stringify(obj);
+   let text = JSON.stringify(obj);
 
    //display string
    document.getElementById("string").innerHTML = text;

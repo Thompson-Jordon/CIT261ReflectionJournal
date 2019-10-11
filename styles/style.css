@@ -21,11 +21,10 @@ div {
   background: #fff;
   border-radius: 15px;
   margin: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 
 p {
-  margin: 10px;
   text-align: justify;
 }
 
@@ -33,7 +32,6 @@ p {
   background: #000;
   color: #fff;
   padding: 10px;
-  margin: 10px;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -52,9 +50,15 @@ blockquote {
 }
 
 input {
-   border-radius: 5px;
-   align-items: right;
-   margin: 10px;
-   padding: 10px;
-   width: 100px
+  border-radius: 5px;
+  align-items: right;
+  margin: 10px;
+  padding: 10px;
+  width: 100px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }

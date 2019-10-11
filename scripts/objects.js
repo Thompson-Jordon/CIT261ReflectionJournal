@@ -1,21 +1,22 @@
 //Function to demonstrate the use of methods
 function displayMessage() {
-   var firstName = document.getElementById("firstName").value;
-   var lastName = document.getElementById("lastName").value;
-   person.firstName = firstName;
-   person.lastName = lastName;
+  let firstName = document.getElementById("firstName").value;
+  let lastName = document.getElementById("lastName").value;
 
-   //run method here
-   person.setMessage();
-   document.getElementById("message").innerHTML = person.message;
+  let person = new Person(firstName, lastName);
+
+  //run method here
+  document.getElementById("message").innerHTML = person.getMessage();
 };
 
 //Functions for JavaScriptObject.html page
-const person = {
-  firstName: 'john',
-  lastName: 'doe',
-  message: '',
-  setMessage: function() {
-    this.message = "Hello " + this.firstName + " " + this.lastName + "!";
+class Person  {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  getMessage() {
+    this.message = `Hello ${this.firstName} ${this.lastName}!`;
   }
 };
