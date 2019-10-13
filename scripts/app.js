@@ -12,3 +12,8 @@ class BlueJay extends Bird {
     this.color = "blue";
   }
 }
+
+function createBird() {
+  let bird = new BlueJay();
+  console.log(bird);
+} 
