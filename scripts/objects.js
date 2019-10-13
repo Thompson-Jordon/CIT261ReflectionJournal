@@ -18,5 +18,26 @@ class Person  {
 
   getMessage() {
     this.message = `Hello ${this.firstName} ${this.lastName}!`;
+    return this.message;
   }
 };
+
+class Bird {
+  constructor() {
+    this.legs = 2;
+    this.wings = 2;
+    this.beak = 1;
+  }
+}
+
+class BlueJay extends Bird {
+  constructor() {
+    super();
+    this.color = "blue";
+  }
+}
+
+function createBird() {
+  let bird = new BlueJay();
+  console.log(bird);
+} 
