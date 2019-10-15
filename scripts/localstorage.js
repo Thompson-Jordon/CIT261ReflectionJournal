@@ -2,6 +2,7 @@
 let myStorage = window.localStorage;
 let tempStorage = window.sessionStorage;
 
+// this will load username into the input field
 document.getElementById("store").value = myStorage.username;
 
 function storeUsername() {
@@ -15,7 +16,7 @@ function storeUsername() {
 
 function removeUsername() {
   //Remove username from long term history
-  myStorage.removeItem.username;
+  myStorage.removeItem("username");
 }
 
 function clearStorage() {
