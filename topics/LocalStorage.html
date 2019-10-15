@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Local Storage</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Local Storage</title>
-   <link rel="stylesheet" href="../styles/style.css">
-</head>
-
-<body>
-   <h1>Local Storage</h1>
-   <div>
-      <h2>Local Stroage API</h2>
-      <p></p>
-   </div>
-   <div>
+  <body>
+    <h1>Local Storage</h1>
+    <div>
+      <h2>Local Storage API</h2>
+      <p>
+        With local storage you can save data that can be used across sessions.
+        This helps to make the app feel more responsive and robust while keeping
+        any personal user data safely on the users computer. With local storage
+        you don't need to send the data back to the server to store it. There
+        are two kinds of storage <strong>"localStorage"</strong> and
+        <strong>"sessionStorage".</strong> "localStorage" will hold the data
+        long term and will be available even if the user closes the web page.
+        "sessionStorage" allows the data to be stored only for the current
+        session. As soon as the user closes the page the data is destroyed.
+      </p>
+      <img
+        src="../images/localStoreAPI.PNG"
+        alt="example of setting storage to a variable"
+      />
+    </div>
+    <div>
       <h2>Storing and Retrieving Simple Data</h2>
-      <p></p>
-   </div>
-   <div>
+      <p>When storing local data you use "key" : "value" pairs.</p>
+      <label for="store">Please enter a Username</label>
+      <input type="text" id="store" on>
+      <label for="key">Please enter a Key</label>
+      <input type="text" id="key" on>
+      <label for="value"><br>Please enter a Value</label>
+      <input type="text" id="value" on>
+      <button onclick="storeUsername()">Store Values</button>
+      <button onclick="removeUsername()">Remove Username</button>
+      <button onclick="clearStorage()">Clear localStorage</button>
+    </div>
+    <div>
       <h2>Arrays</h2>
       <p></p>
-   </div>
-   <div>
+    </div>
+    <div>
       <h2>Associative Arrays</h2>
       <p></p>
-   </div>
-   <div>
+    </div>
+    <div>
       <h2>Objects</h2>
       <p></p>
-   </div>
-   <script src="../scripts/app.js"></script>
-</body>
-
+    </div>
+    <script src="../scripts/localstorage.js"></script>
+  </body>
 </html>
