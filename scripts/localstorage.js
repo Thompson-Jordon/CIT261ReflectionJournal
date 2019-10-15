@@ -21,3 +21,9 @@ function removeUsername() {
 function clearStorage() {
   myStorage.clear();
 }
+
+let sports = ["Soccer", "Football", "Basketball", "Volleyball"];
+
+function storeSports() {
+  myStorage.sports = JSON.stringify(sports);
+}
