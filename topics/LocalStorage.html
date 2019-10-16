@@ -32,27 +32,29 @@
       <h2>Storing and Retrieving Simple Data</h2>
       <p>When storing local data you use "key" : "value" pairs.</p>
       <label for="store">Please enter a Username</label>
-      <input type="text" id="store" on>
+      <input type="text" id="store" on />
       <label for="key">Please enter a Key</label>
-      <input type="text" id="key" on>
-      <label for="value"><br>Please enter a Value</label>
-      <input type="text" id="value" on>
+      <input type="text" id="key" on />
+      <label for="value"><br />Please enter a Value</label>
+      <input type="text" id="value" on />
       <button onclick="storeUsername()">Store Values</button>
       <button onclick="removeUsername()">Remove Username</button>
       <button onclick="clearStorage()">Clear localStorage</button>
     </div>
     <div>
       <h2>Arrays</h2>
-      <p></p>
+      <p>
+        To store arrays you first need to turn them into a string by using
+        JSON.stringify()
+      </p>
       <button onclick="storeSports()">Store Sports Array</button>
     </div>
     <div>
-      <h2>Associative Arrays</h2>
-      <p></p>
-    </div>
-    <div>
-      <h2>Objects</h2>
-      <p></p>
+      <h2>Associative Arrays and Objects</h2>
+      <p>
+        I decided to do both Assosiative arrays and objects together since they
+        are very similar.
+      </p>
     </div>
     <script src="../scripts/localstorage.js"></script>
   </body>
