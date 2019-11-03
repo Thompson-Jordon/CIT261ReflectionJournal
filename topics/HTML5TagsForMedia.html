@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML5 Tags for Media</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>HTML5 Tags for Media</title>
-   <link rel="stylesheet" href="../styles/style.css">
-</head>
-
-<body>
-   <h1>HTML5 Tags for Media</h1>
-   <div>
-      <h2>HTML5 Tags - Video, Audio, and Canvas</h2>
+  <body>
+    <h1>HTML5 Tags for Media</h1>
+    <div>
+      <h2>Video</h2>
+      <p>
+        The video tag allows you to embed a video into your web page. This is a
+        big improvement over needing to use plug-ins.
+      </p>
+      <video src="../media/big_buck_bunny.mp4" controls></video>
+    </div>
+    <div>
+      <h2>Audio</h2>
       <p></p>
-   </div>
-   <script src="../scripts/app.js"></script>
-</body>
-
+      <audio src="../media/meadowlark_daniel-simion.mp3" controls></audio>
+    </div>
+    <div>
+      <h2>Canvas</h2>
+      <p>
+        The canvas tag allows you to draw graphics using JavaScript.
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial"
+          >Mozilla Developer</a
+        >
+        has a fantastic tutorial that walks you through the basics and can give
+        you some practice with the tool.
+      </p>
+      <canvas id="canvas" width="auto" height="200px"></canvas>
+    </div>
+    <script src="../scripts/canvas.js"></script>
+  </body>
 </html>
