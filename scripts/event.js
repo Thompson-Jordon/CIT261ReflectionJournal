@@ -1,32 +1,34 @@
 // function for onload
 function loadAlert() {
-   window.alert("Your page has loaded.");
+  window.alert("Your page has loaded.");
 }
 
 // get buttons
 let click = document.getElementById("click");
 let blur = document.getElementById("blur");
 let touch = document.getElementById("touch");
-let dblclick = document.getElementById("dblclick");
-let mouseover = document.getElementById("mouseover");
+let mouseup = document.getElementById("mouseup");
+let mouse = document.getElementById("mouse");
 
 click.addEventListener("click", () => {
-   window.alert("You have clicked the onclick button.");
+  window.alert("You have clicked the onclick button.");
 });
 
-blur.addEventListener("blur", () =>{
-   window.alert("You have blured the onblur button.");
+blur.addEventListener("blur", () => {
+  window.alert("You have blured the onblur button.");
 });
 
-touch.addEventListener("touchstart", () =>{
-   window.alert("You have touched the ontouch button.");
+touch.addEventListener("touchstart", () => {
+  window.alert("You have touched the ontouch button.");
 });
 
-dblclick.addEventListener("dblclick", () => {
-   window.alert("You have double clicked the ondblclick button.");
+mouseup.addEventListener("mouseup", () => {
+  window.alert("You have double clicked the ondblclick button.");
 });
 
-function changeColor() {
-   let btn = document.getElementById("mouseover");
-   btn.style.backgroundColor = "purple";
-};
+mouse.addEventListener("mouseover", () => {
+  mouse.style.background = "Purple";
+});
+mouse.addEventListener("mouseout", () => {
+  mouse.style.background = "green";
+});
