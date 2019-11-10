@@ -3,7 +3,7 @@ function loadAlert() {
   window.alert("Your page has loaded.");
 }
 
-// get buttons
+// get variables
 let click = document.getElementById("click");
 let blur = document.getElementById("blur");
 let touch = document.getElementById("touch");
@@ -23,7 +23,7 @@ touch.addEventListener("touchstart", () => {
 });
 
 mouseup.addEventListener("mouseup", () => {
-  window.alert("You have double clicked the ondblclick button.");
+  window.alert("You have released your mouse button.");
 });
 
 mouse.addEventListener("mouseover", () => {
@@ -32,3 +32,4 @@ mouse.addEventListener("mouseover", () => {
 mouse.addEventListener("mouseout", () => {
   mouse.style.background = "green";
 });
+ 
