@@ -9,8 +9,8 @@ btn1.addEventListener("click", () => {
 
 btn2.addEventListener("click", () => {
    btn2.style.backgroundColor = "green";
-})
+});
 
 btn3.addEventListener("click", () => {
    btn3.style.fontSize = "32px";
-})
+});
