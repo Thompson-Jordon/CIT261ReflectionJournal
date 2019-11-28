@@ -2,7 +2,7 @@ const key = "566212c3f3fa2dd43a6047055529f569";
 
 function getWeather() {
   let city = document.getElementById("city").value;
-  let url = `http://api.openweathermap.org/data/2.5/weather?q=${city},us&units=imperial&appid=${key}`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city},us&units=imperial&appid=${key}`;
 
   let xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
