@@ -1,0 +1,73 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: lightskyblue;
+
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  background-color: rgb(206, 33, 33);
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+.section p {
+  margin: 15px;
+  font-size: 18px;
+}
+
+.hero_list {
+  text-align: center;
+  padding: 6px;
+}
+
+.hero_list a {
+  color: rgb(24, 24, 85);
+  font-size: 16pt;
+}
+
+a {
+  text-decoration: none;
+}
+
+#logo {
+  height: 25px;
+  width: auto;
+  justify-items: left;
+}
+
+.hero_pic {
+  display: block;
+  width: 60%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.icon {
+  float: right;
+}
+
+.active {
+  color: white;
+}
