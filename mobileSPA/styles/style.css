@@ -84,3 +84,29 @@ input:hover {
   background-color: rgb(67, 161, 238);
   color: black;
 }
+
+/*Animation*/
+#animate {
+  background: rgb(44, 35, 35);
+  position: relative;
+  padding: 4px;
+  animation: animate 1s;
+  border-radius: 12px;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+    left: 100px;
+    top: 25px;
+  }
+  50% {
+    transform: rotate(0deg);
+    left: 100px;
+    top: 25px;
+  }
+  100% {
+    transform: rotate(-1080deg);
+    left: 0px;
+  }
+}

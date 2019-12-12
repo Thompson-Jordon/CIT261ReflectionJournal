@@ -29,7 +29,7 @@ let Profile = {
     let person = await getHeroes(request.id);
     let view = /*html*/ `
          <section class="section">
-            <img class="hero_pic" src="${person.images.md}" alt="Image of ${person.name}">
+            <img id="animate" class="hero_pic" src="${person.images.md}" alt="Image of ${person.name}">
             <h1>${person.name}</h1>
             <p> Id : ${person.id} </p>
             <p> Alignment : ${person.biography.alignment} </p>
