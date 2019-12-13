@@ -9,7 +9,20 @@
 </head>
 <body>
    <h1>Week 13</h1>
-   
+   <div class="section">
+      <p>This week I worked on finishing my mobile web app. I ran into a couple
+         problems one of which was not being able to run any functions. After
+         much troubleshooting I learned that it was because I can't trigger an 
+         event on an html page when I'm using module type scripts. The only way 
+         to get around this was to set an event listener in the js file. Once I
+         figured that out I ran into another problem. My main page didn't contain
+         my add favorites button. Since I set up my app as an SPA and my event
+         listener would only be created if the button existed on load it wasn't 
+         creating my event listener and my function was not being called. To fix
+         this I set up a function to check if the button exsisted on a hash
+         change. This allowed the event listener to be created and the function
+         to be called. 
+      </p>
    <script src="/scripts/app.js"></script>
 </body>
 </html>
