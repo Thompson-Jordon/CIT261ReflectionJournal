@@ -60,6 +60,7 @@ window.addEventListener('load', router);
 window.addEventListener('hashchange', () => {
    if (document.querySelector("#favorite")) {
       document.querySelector("#favorite").addEventListener('click', toggleFavs);
+      window.scrollTo(0,0);
    }
 })
 

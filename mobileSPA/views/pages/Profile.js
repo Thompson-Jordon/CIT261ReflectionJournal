@@ -30,11 +30,11 @@ let Profile = {
     let view = /*html*/ `
          <section class="section">
             <img id="animate" class="hero_pic" src="${person.images.md}" alt="Image of ${person.name}">
-            <h1>${person.name}</h1>
+            <h2>${person.name}</h2>
             <p> Id : ${person.id} </p>
             <p> Alignment : ${person.biography.alignment} </p>
             <p> Publisher : ${person.biography.publisher} </p>
-            <h2> Power Stats <h2>
+            <h2> Power Stats </h2>
             <p> Intelligence : ${person.powerstats.intelligence} </p>
             <p> Strength : ${person.powerstats.strength} </p>
             <p> Speed : ${person.powerstats.speed} </p>
